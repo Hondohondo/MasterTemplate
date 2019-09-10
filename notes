@@ -1,0 +1,47 @@
+Master Template:
+
+After setting up the normal html boiler plate, CSS and BEM..
+
+Setting up Node, NPM and Sass:
+
+1. Make sure you have Node installed... (verify by checking "node-v" on terminal)
+2. Then "npm init" in order to create package.json file
+3. Install Node sass by writing on terminal "npm install node-sass --save-dev" , 
+we used save-dev in order to save it as devlopment dependency in our package.json file (which means is it's a development tool
+that will help us build our project)...Also by saving it means we can share our file without sharing our node modules folder.
+If someone receive our project they can just "npm install" on terminal then all dependencies will be automatically installed
+4. 
+
+
+{
+  "name": "dialoguehouse",
+  "version": "1.0.0",
+  "description": "dialogue house new website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"      (((replace the test script that comes with the file)))
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hondohondo/DialogueHouse.git"
+  },
+  "author": "Moses Nandi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hondohondo/DialogueHouse/issues"
+  },
+  "homepage": "https://github.com/Hondohondo/DialogueHouse#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
+
+To compile sass:
+
+Run on the command line ... making sure you are on the SASS folder this command "npm run compile:sass"
+
+Install Live-server globally:
+
+On terminal run..."sudo  npm install live-server -g"
+
+Then run "live-server" on your home directory to open the site on your browser...
